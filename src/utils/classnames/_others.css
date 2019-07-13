@@ -1,0 +1,18 @@
+.u-boxShadowBottomBlack6 {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.u-capitalize {
+  text-transform: capitalize !important;
+}
+
+.u-backgroundNoRepeat {
+  background-repeat: no-repeat !important;
+}
+.u-backgroundSizeCover {
+  background-size: cover !important;
+}
+
+.u-cursorPointer {
+  cursor: pointer !important;
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}  
+*, *:after, *:before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+@import './_font.css';
+@import './_colors.css';
+@import './_margin.css';
+@import './_padding.css';
+@import './_border.css';
+@import './_positioning.css';
+@import './_sizing.css';
+@import './_z-index.css';
+@import './_icons.css';
+@import './_others.css';
