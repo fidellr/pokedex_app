@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { fetchPokemonCharacter } from '../../utils/services/pokemonCharacter';
+import ListCard from '../../components/ListCard/index.js';
+import Modal from '../../components/Modal/index.js';
 import throttle from '../../utils/helpers/throttle.js';
 
 class HomePage extends Component {
@@ -31,6 +33,18 @@ class HomePage extends Component {
         <p className="u-textAlignCenter u-paddingVertical16">Please wait...</p>
       )
     }
+  }
+
+  renderContent = () => {
+    const { data } = this.state;
+    this.renderLoading()
+    return data && data.map((item, index) => (
+      <ListCard
+        key={`${item.name}-${index}`}
+        item={item}
+        handleSelectItem={() => this.handleSelectItem(item)}
+      />
+    ))
   }
 
   handleFetchData = async () => {
@@ -69,8 +83,15 @@ class HomePage extends Component {
   }
 
   render() {
+    const { selectedItem } = this.state;
     return (
       <div className="homePage-container">
+        <Modal
+          item={selectedItem}
+          handleSelectItem={this.handleSelectItem}
+        />
+        {this.renderContent()}
+        {this.renderLoading()}
       </div>
     )
   }
