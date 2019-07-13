@@ -89,7 +89,6 @@ class Modal extends Component {
     const { detailData } = this.state;
     const { item } = this.props;
     const isItemExist = item;
-    console.log('DD',detailData);
 
     return (
       <div className={cls("modale", {

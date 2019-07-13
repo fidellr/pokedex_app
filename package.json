@@ -9,6 +9,16 @@
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
