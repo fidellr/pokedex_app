@@ -5,6 +5,11 @@
 3. For utilities related such as helper functions and reusable classnames, must be placed in `/utils`
 (I used utilities classname to prevent any duplicated style rules and reduce css files)
 
+## How to interact with app
+1. Choose your pokemon character names, should be hovered when you moving around the cursor
+2. When you click one of the character, the detail must be popped up with a modal dialog
+3. If you don't see any character that you looking for, just scroll down, it should fetch as an infinite whenever you reached the bottom of the page
+
 ## Available Scripts
 
 In the project directory, you can run:
